@@ -1,6 +1,9 @@
 # employee-manager-sql
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+  ## Video Link - Should be available in HD
+  [Demo Video](https://www.youtube.com/watch?v=akpvJLPOFn8)
+
   ## <a style="text-decoration: none; color: rgb(210, 210, 210); font-weight: bold" id="description">Description</a>
   
   This project used MYSQL, along with NODE.JS and inquirer to create an employee database management tool in the terminal.

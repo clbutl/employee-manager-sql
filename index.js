@@ -9,9 +9,7 @@ const { baremetalsolution } = require('googleapis/build/src/apis/baremetalsoluti
 const db = mysql.createConnection(
   {
     host: 'localhost',
-    // MySQL username,
     user: 'root',
-    // TODO: Add MySQL password here
     password: '',
     database: 'employee_tracker'
   },
@@ -255,7 +253,6 @@ const runAddEmployees = async (roleChoice, managerChoice) => {
     }
   ])
   const organizeAnswers = (answers) => {
-    console.log(answers)
     const fName = answers.newEmployeeFirst
     const lName = answers.newEmployeeLast
     const role = answers.newEmployeeRole
@@ -413,6 +410,7 @@ function updateEmployees() {
     }
 };
 
+// Updates an employee's manager
 const updateManager = async () => {
 db.query('SELECT employees.id, employees.first_name, employees.last_name FROM employees', (err, result) => {
   if (err) {console.log(err)};
@@ -432,7 +430,6 @@ const getInputsEmployees = async (employeeList) => {
     }
   ])
   const organizeAnswers = (answers) => {
-    console.log(answers)
     getInputsManagers(employeeList, answers.employeeChoice)
   }
   organizeAnswers(answers)
@@ -466,6 +463,7 @@ const updateManager = (employeeId, managerId) => {
 }
 }
 
+// View employees by their manager
 const viewByManager = async () => {
   db.query('SELECT id, first_name, last_name FROM employees', (err, result) => {
     if (err) {console.log(err)}
@@ -500,6 +498,7 @@ const viewByManager = async () => {
   }
 }
 
+// View employees by department
 const viewByDepartment = () => {
   db.query(`SELECT name, id FROM department`, (err, result) => {
     if (err) {console.log(err)}

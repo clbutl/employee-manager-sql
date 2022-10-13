@@ -13,11 +13,11 @@ INSERT INTO roles (title, salary, department_id) VALUES
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id) 
 VALUES ('Samual', 'Adams', 1, null),
-  ('Cannon', 'Adams', 3, 1),
-  ('Maxwell', 'Adams', 2, 7),
-  ('Dale', 'Adams', 3, 7),
-  ('Jorden', 'Adams', 4, 8),
-  ('Andrew', 'Adams', 5, 8),
-  ('Perkins', 'Adams', 1, 1),
-  ('Issac', 'Adams', 2, 7),
-  ('Braeden', 'Adams', 4, 1);
+  ('Cannon', 'Butler', 3, 1),
+  ('Maxwell', 'Trout', 2, 7),
+  ('Dale', 'Yolk', 3, 7),
+  ('Jorden', 'Evans', 4, 8),
+  ('Andrew', 'Smith', 5, 8),
+  ('Perkins', 'Joust', 1, 1),
+  ('Issac', 'Babb', 2, 7),
+  ('Braeden', 'Attan', 4, 1);
